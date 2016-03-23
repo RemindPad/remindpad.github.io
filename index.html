@@ -29,6 +29,10 @@
 
 	  ga('create', 'UA-75477688-1', 'auto');
 	  ga('send', 'pageview');
+	  
+	  function sendGaEvent() {
+	  	ga('send', 'event', 'subscription', 'sign_up');
+	  }
 	</script>
 
 	<script type="text/javascript">CRISP_WEBSITE_ID = "-KDXxb_GAwIrSWIdva7c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
@@ -60,7 +64,7 @@
 				<div class="five columns">
 					<!-- Begin MailChimp Signup Form -->
 					<div class="signup-form" id="mc_embed_signup">
-						<form action="//remindpad.us11.list-manage.com/subscribe/post?u=31ec2e36dafb31079d54c3e0b&amp;id=dca8aa1a0f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<form action="//remindpad.us11.list-manage.com/subscribe/post?u=31ec2e36dafb31079d54c3e0b&amp;id=dca8aa1a0f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" onsubmit="sendGaEvent()" novalidate>
 					    <div id="mc_embed_signup_scroll">
 								<div class="row">
 									<div class="twelve columns mc-field-group">
